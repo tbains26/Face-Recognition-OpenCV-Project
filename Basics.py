@@ -8,7 +8,7 @@ img_Mark=cv2.cvtColor(img_Mark,cv2.COLOR_BGR2RGB)
 img_Test=face_recognition.load_image_file("ImagesBasic/Mark_Zuckerberg_test.jpg")
 img_Test=cv2.cvtColor(img_Test,cv2.COLOR_BGR2RGB)
 
-# Find face and encode in main/test image
+# #Find face and encode in main/test image
 face_locations = face_recognition.face_locations(img_Mark)[0]
 encode_Mark=face_recognition.face_encodings(img_Mark)[0]
 cv2.rectangle(img_Mark,(face_locations[3],face_locations[0]),(face_locations[1],face_locations[2]),(255,0,0),2)
